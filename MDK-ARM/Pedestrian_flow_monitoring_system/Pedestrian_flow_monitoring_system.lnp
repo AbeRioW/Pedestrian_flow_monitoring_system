@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"pedestrian_flow_monitoring_system\startup_stm32f103xb.o"
+"pedestrian_flow_monitoring_system\main.o"
+"pedestrian_flow_monitoring_system\gpio.o"
+"pedestrian_flow_monitoring_system\usart.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_it.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_msp.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_gpio_ex.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_uart.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_rcc.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_rcc_ex.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_gpio.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_dma.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_cortex.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_pwr.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_flash.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_flash_ex.o"
+"pedestrian_flow_monitoring_system\stm32f1xx_hal_exti.o"
+"pedestrian_flow_monitoring_system\system_stm32f1xx.o"
+"pedestrian_flow_monitoring_system\oled.o"
+--strict --scatter "Pedestrian_flow_monitoring_system\Pedestrian_flow_monitoring_system.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Pedestrian_flow_monitoring_system.map" -o Pedestrian_flow_monitoring_system\Pedestrian_flow_monitoring_system.axf
